@@ -13,8 +13,8 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #ffeef2; /* lavender-blush */
-    color: #595758; /* charcoal */
+    background-color: #ffeef2; 
+    color: #595758;
     padding-bottom: 50px;
 }
 
@@ -22,10 +22,9 @@ body {
 /* 1. Layout e Estrutura Principal */
 /* ==================================== */
 
-/* Estilização do cabeçalho principal */
 .header-principal {
-    background: linear-gradient(135deg, #ff92c2, #ffc8fb); /* pink-mist, pink-orchid */
-    color: #ffffff; /* Branco */
+    background: linear-gradient(135deg, #ff92c2, #ffc8fb);
+    color: #ffffff;
     padding: 30px 20px;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -35,48 +34,43 @@ body {
     font-family: 'Playfair Display', serif;
 }
 
-/* Contêiner principal */
 .container {
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
 }
 
-/* Estilo geral das seções de conteúdo */
 .secao {
-    background-color: #ffffff; /* Branco */
+    background-color: #ffffff;
     padding: 30px;
     margin-bottom: 40px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
-/* Estilo dos títulos das seções */
 .secao h2 {
     font-family: 'Playfair Display', serif;
-    color: #ff92c2; /* pink-mist */
-    border-bottom: 2px solid #ffe4f3; /* lavender-veil */
+    color: #ff92c2;
+    border-bottom: 2px solid #ffe4f3;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
-/* Estilização do rodapé */
 .footer-principal {
     text-align: center;
     padding: 20px;
-    background-color: #595758; /* charcoal */
-    color: #ffeef2; /* lavender-blush */
-    border-top: 3px solid #ff92c2; /* pink-mist */
+    background-color: #595758;
+    color: #ffeef2;
+    border-top: 3px solid #ff92c2;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
 /* ==================================== */
-/* 2. Estilização de Cards e Grids */
+/* 2. Estilização de Cards e Cores */
 /* ==================================== */
 
-/* Layout de grid para exemplos em linha */
 .exemplo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -84,120 +78,106 @@ body {
     margin-bottom: 30px;
 }
 
-/* Estilo base para todos os cards de demonstração */
 .card {
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     text-align: center;
-    background-color: #ffe4f3; /* lavender-veil */
+    background-color: #ffe4f3;
 }
 
-/* Efeito de hover nos cards */
 .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-/* Demonstração de Sistemas de Cores (Estilos específicos) */
-.cor-nome { background-color: red; color: #ffffff; }
-.cor-hex { background-color: #3498db; color: #ffffff; }
-.cor-rgb { background-color: rgb(46, 204, 113); color: #ffffff; }
-.cor-rgba { background-color: rgba(155, 89, 182, 0.7); color: #ffffff; }
-.cor-hsl { background-color: hsl(48, 89%, 60%); color: #595758; }
+/* Demonstração da Paleta do Projeto como Sistemas de Cores */
 
-/* Layout da paleta de cores */
-.paleta-grid {
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
+.cor-hex-primaria { 
+    background-color: #ffc8fb; 
+    color: #595758;
 }
 
-/* Itens individuais da paleta */
-.cor-item {
-    flex-grow: 1;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: #ffffff; /* Cor de texto em itens coloridos */
-    border-radius: 4px;
+.cor-rgb-secundaria { 
+    background-color: rgb(255, 146, 194);
+    color: #ffffff;
 }
 
-/* Cores da Paleta Aplicadas */
-.cor-primaria { background-color: #ffc8fb; } /* pink-orchid */
-.cor-secundaria { background-color: #ff92c2; } /* pink-mist */
-.cor-terciaria { background-color: #595758; } /* charcoal */
-.cor-acento { background-color: #ff92c2; } /* pink-mist */
-.cor-neutra { background-color: #ffe4f3; color: #595758; text-shadow: none; } /* lavender-veil */
+.cor-nome-terciaria { 
+    background-color: #595758;
+    color: #ffffff; 
+}
+
+.cor-rgba-neutra { 
+    background-color: rgba(255, 228, 243, 0.8);
+    color: #595758; 
+    border: 2px solid #ffc8fb;
+}
+
+.cor-hsl-acento { 
+    background-color: hsl(334, 100%, 79%);
+    color: #ffffff;
+}
+
 
 /* ==================================== */
 /* 3. Seção de Tipografia */
 /* ==================================== */
 
-/* Grid para os exemplos de tipografia */
 .exemplo-tipografia {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
 }
 
-/* Container de cada exemplo de tipografia */
 .tipo-exemplo {
-    border: 1px solid #ffe4f3; /* lavender-veil */
+    border: 1px solid #ffe4f3;
     padding: 20px;
     border-radius: 6px;
 }
 
 .tipo-exemplo h3 {
-    color: #ff92c2; /* pink-mist */
-    border-bottom: 1px dashed #ffe4f3; /* lavender-veil */
+    color: #ff92c2;
+    border-bottom: 1px dashed #ffe4f3;
     padding-bottom: 8px;
 }
 
-/* Fontes */
 .tipo-roboto { font-family: 'Roboto', sans-serif; }
 .tipo-playfair { font-family: 'Playfair Display', serif; font-style: italic; }
 
-/* Pesos de fonte (weight) */
 .peso-light { font-weight: 300; }
 .peso-normal { font-weight: 400; }
 .peso-bold { font-weight: 700; }
 
-/* Tamanhos de fonte (size) */
 .tamanho-14 { font-size: 0.875rem; } 
 .tamanho-16 { font-size: 1rem; }    
 .tamanho-18 { font-size: 1.125rem; } 
 .tamanho-24 { font-size: 1.5rem; }   
 
-/* Altura da linha (line-height) */
-.linha-compacta { line-height: 1.2; background-color: #ffeef2; padding: 5px; margin-bottom: 5px; } /* lavender-blush */
-.linha-normal { line-height: 1.5; background-color: #ffeef2; padding: 5px; margin-bottom: 5px; } /* lavender-blush */
-.linha-ampla { line-height: 2.0; background-color: #ffeef2; padding: 5px; } /* lavender-blush */
+.linha-compacta { line-height: 1.2; background-color: #ffeef2; padding: 5px; margin-bottom: 5px; }
+.linha-normal { line-height: 1.5; background-color: #ffeef2; padding: 5px; margin-bottom: 5px; }
+.linha-ampla { line-height: 2.0; background-color: #ffeef2; padding: 5px; }
 
 
 /* ==================================== */
 /* 4. Seção de Backgrounds */
 /* ==================================== */
 
-/* Card com background-color */
 .bg-cor {
-    background-color: #ff92c2; /* pink-mist */
+    background-color: #ff92c2;
     color: #ffffff;
 }
 
-/* Card com background-image (padrão) */
 .bg-imagem {
-    background-image: url('pexels-ithalu-907485.jpg');
-    background-color: #ffe4f3; /* lavender-veil */
+    background-image: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png');
+    background-color: #ffe4f3;
     color: #595758;
 }
 
-/* Card com background-size: cover */
+/* Usando a mesma imagem para cover e contain */
 .bg-cover {
-    background-image: url('pexels-ithalu-907485.jpg'); 
+    background-image: url('pexels-ithalu-907485.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -206,33 +186,34 @@ body {
     text-shadow: 1px 1px 2px #595758;
 }
 
-/* Card com background-size: contain */
 .bg-contain {
-    background-image: url('pexels-ithalu-907485.jpg'); 
+    background-image: url('pexels-ithalu-907485.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
     min-height: 150px;
-    background-color: #ffeef2; /* lavender-blush */ 
+    background-color: #ffeef2; 
 }
 
-/* Layout dos exemplos de background-position */
 .posicao-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 10px;
 }
 
-/* Itens de demonstração de background-position */
 .pos-item {
     height: 80px;
-    border: 1px solid #ffe4f3; /* lavender-veil */
-    background-image: url('pexels-ithalu-907485.jpg'); 
+    border: 1px solid #ffe4f3;
+    background-image: url('pexels-ithalu-907485.jpg');
     background-repeat: no-repeat;
-    background-color: #ffeef2; /* lavender-blush */
+    background-color: #ffeef2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
-/* Valores de background-position */
 .bg-pos-center { background-position: center center; }
 .bg-pos-top { background-position: top center; }
 .bg-pos-bottom { background-position: bottom center; }
@@ -244,14 +225,12 @@ body {
 /* 5. Seção de Gradientes */
 /* ==================================== */
 
-/* Grid para os exemplos de gradiente */
 .gradientes-showcase {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
-/* Estilo base para os blocos de gradiente */
 .gradiente-item {
     padding: 20px;
     height: 150px;
@@ -268,7 +247,6 @@ body {
     font-family: monospace;
 }
 
-/* Aplicação dos Gradientes */
 .grad-linear-2 {
     background-image: linear-gradient(to right, #595758, #ff92c2);
 }
@@ -300,15 +278,13 @@ body {
 /* 6. Seção de Exercício Prático */
 /* ==================================== */
 
-/* Container do exercício */
 .exercicio-container {
     padding: 20px;
-    background-color: #ffeef2; /* lavender-blush */
+    background-color: #ffeef2;
     border-radius: 8px;
-    border: 2px dashed #ff92c2; /* pink-mist */
+    border: 2px dashed #ff92c2;
 }
 
-/* Card para estilização livre */
 .card-exercicio {
     background: linear-gradient(145deg, #ffc8fb, #ff92c2);
     color: #595758;
@@ -321,9 +297,8 @@ body {
     transition: all 0.5s ease;
 }
 
-/* Botão de ação do card */
 .btn-exercicio {
-    background-color: #595758; /* charcoal */
+    background-color: #595758;
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -335,22 +310,21 @@ body {
 }
 
 .btn-exercicio:hover {
-    background-color: #ff92c2; /* pink-mist */
+    background-color: #ff92c2;
     color: #595758;
     transform: scale(1.05);
 }
 
-/* Container das dicas */
 .dicas {
     padding: 15px;
-    background-color: #ffe4f3; /* lavender-veil */
-    border: 1px solid #595758; /* charcoal */
-    border-left: 5px solid #595758; /* charcoal */
+    background-color: #ffe4f3;
+    border: 1px solid #595758;
+    border-left: 5px solid #595758;
     border-radius: 4px;
 }
 
 .dicas h4 {
-    color: #595758; /* charcoal */
+    color: #595758;
 }
 
 .dicas ul {

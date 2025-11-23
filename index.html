@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade CSS3 - Cores, Tipografia e Backgrounds</title>
       
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,56 +19,36 @@
 
     <main class="container">
         <section class="secao" id="cores">
-            <h2>1. Sistemas de Cores em CSS</h2>
+            <h2>1. Sistemas de Cores em CSS (Paleta do Projeto)</h2>
             
             <div class="exemplo-grid">
-                <div class="card cor-nome">
-                    <h3>Nome da Cor</h3>
-                    <p>background-color: red;</p>
+                <div class="card cor-hex-primaria">
+                    <h3>Hexadecimal (Primária)</h3>
+                    <p>#ffc8fb</p>
                 </div>
                 
-                <div class="card cor-hex">
-                    <h3>Hexadecimal</h3>
-                    <p>#3498db</p>
+                <div class="card cor-rgb-secundaria">
+                    <h3>RGB (Secundária)</h3>
+                    <p>rgb(255, 146, 194)</p>
                 </div>
                 
-                <div class="card cor-rgb">
-                    <h3>RGB</h3>
-                    <p>rgb(46, 204, 113)</p>
+                <div class="card cor-nome-terciaria">
+                    <h3>Nome da Cor (Simulado)</h3>
+                    <p>Dark Gray</p>
                 </div>
                 
-                <div class="card cor-rgba">
-                    <h3>RGBA</h3>
-                    <p>rgba(155, 89, 182, 0.7)</p>
+                <div class="card cor-rgba-neutra">
+                    <h3>RGBA (Neutra, 80%)</h3>
+                    <p>rgba(255, 228, 243, 0.8)</p>
                 </div>
                 
-                <div class="card cor-hsl">
-                    <h3>HSL</h3>
-                    <p>hsl(48, 89%, 60%)</p>
+                <div class="card cor-hsl-acento">
+                    <h3>HSL (Acento)</h3>
+                    <p>hsl(334, 100%, 79%)</p>
                 </div>
             </div>
-
-            <div class="paleta-cores">
-                <h3>Paleta de Cores do Projeto</h3>
-                <div class="paleta-grid">
-                    <div class="cor-item cor-primaria">
-                        <span>Primária</span>
-                    </div>
-                    <div class="cor-item cor-secundaria">
-                        <span>Secundária</span>
-                    </div>
-                    <div class="cor-item cor-terciaria">
-                        <span>Terciária</span>
-                    </div>
-                    <div class="cor-item cor-acento">
-                        <span>Acento</span>
-                    </div>
-                    <div class="cor-item cor-neutra">
-                        <span>Neutra</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+            
+            </section>
 
         <section class="secao" id="tipografia">
             <h2>2. Tipografia</h2>
